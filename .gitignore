@@ -1,5 +1,10 @@
 bin
+pkg
 src/github.com
 src/golang.org
+src/main
 Dockerfile
 main
+go.mod
+go.sum
+
