@@ -1,7 +1,7 @@
 include make_env
 
 build: Dockerfile.scratch
-	export GOPATH=$(GOPATH)
+	export GOPATH=$(PWD)
 	CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o main ./src
 	docker build -t example-scratch -f Dockerfile.scratch .
 
